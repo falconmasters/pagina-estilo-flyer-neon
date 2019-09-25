@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Efecto Texto Neon</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<header class="contenido-encabezado" id="contenido-encabezado">
+		<div class="texto-encabezado">
+			<p class="icono">
+				<i class="fas fa-glass-cheers"></i>
+			</p>
+			<h1 class="titulo">
+				Bohemiam Bar<br>¡Entra!<br>
+				<span class="titulo-naranja-neon texto-regular">50% de Descuento</span>
+			</h1>
+			<p class="descripcion">
+				Tenemos nueva sucursal<br>
+				Por apertura, todas nuestras bebidas a mitad <br>
+				de precio en Av Lorem 28-B, Col. Centro, Ipsum.
+			</p>
+
+			<a href="#" class="btn-link texto-regular">Más información</a>
+		</div>
+	</header>
+
+	<main>
+		<section class="contenedor">
+			<h2 class="subtitulo-h2">Servicios</h2>
+			<p><span class="letra-capital">P</span>ara despejar la cabeza orem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum provident distinctio dolores nisi corporis! Adipisci inventore nostrum exercitationem id repellendus maxime voluptate recusandae autem, earum accusamus, non, cupiditate nihil!</p>
+
+			<p>Doloremque voluptatum incidunt architecto explicabo voluptate eveniet, accusantium odit alias est fugiat eum consectetur dolor consequatur nihil at voluptatibus inventore, temporibus tempora?
+			Est itaque, corrupti, reprehenderit placeat aut deleniti a vel ipsum perspiciatis accusamus quasi, quo earum consequatur. Cum distinctio quae sapiente fuga laboriosam.</p>
+
+			<p>Cupiditate nam dolore inventore at dicta molestiae, adipisci voluptatem nihil asperiores, sunt debitis? Rerum, sed impedit qui sapiente eaque nesciunt voluptas consequuntur!</p>
+		</section>
+	</main>
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<script>
+		window.addEventListener('scroll', () => {
+			const header = document.getElementById('contenido-encabezado');
+			header.style.opacity = '1' - window.pageYOffset / 650;
+		});
+	</script>
+</body>
+</html>
